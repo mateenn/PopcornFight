@@ -14,13 +14,12 @@ namespace ECS.TheSyedMateen.Popcorn
         public override void Bake(SpawnerAuthoring authoring)
         {
             Entity entity = GetEntity(TransformUsageFlags.None);
-
             AddComponent(entity, new SpawnedModelComponent
             {
                 entityPrefab = GetEntity(authoring.objectToSpawn, TransformUsageFlags.Dynamic),
                 spawnPosition = authoring.transform.position,
-                nextSpawnTime = 0f,
-                spawnRate = authoring.spawnRate
+                //nextSpawnTime = 0f,
+                //spawnRate = authoring.spawnRate
             });
         }
     }

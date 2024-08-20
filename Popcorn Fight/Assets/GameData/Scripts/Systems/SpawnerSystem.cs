@@ -11,7 +11,7 @@ namespace ECS.TheSyedMateen.Popcorn
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            if(!SystemAPI.TryGetSingletonEntity<SpawnedModelComponent>(out Entity spawnerEntity))
+            /*if(!SystemAPI.TryGetSingletonEntity<SpawnedModelComponent>(out Entity spawnerEntity))
             {
                 return;
             }
@@ -32,7 +32,7 @@ namespace ECS.TheSyedMateen.Popcorn
                 spawner.ValueRW.nextSpawnTime = (float)SystemAPI.Time.ElapsedTime + spawner.ValueRO.spawnRate;
 
                 ecb.Playback(state.EntityManager);
-            }
+            }*/
         }
     }
 }

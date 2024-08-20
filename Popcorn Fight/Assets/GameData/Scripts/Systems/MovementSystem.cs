@@ -13,7 +13,7 @@ namespace ECS.TheSyedMateen.Popcorn
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
-            EntityManager entityManager = state.EntityManager;
+           /* EntityManager entityManager = state.EntityManager;
             NativeArray<Entity> movementEntities = entityManager.GetAllEntities(Allocator.Temp);
 
             foreach(Entity entity in movementEntities)
@@ -26,7 +26,7 @@ namespace ECS.TheSyedMateen.Popcorn
 
                     float3 nextPosition = movementComponent.moveDirection * SystemAPI.Time.DeltaTime * movementComponent.moveSpeed;
 
-                    localTransform.Position += localTransform.Position + nextPosition;
+                    localTransform.Position = localTransform.Position + nextPosition;
                     entityManager.SetComponentData<LocalTransform>(entity, localTransform);
 
                     if(movementComponent.moveSpeed > 0)
@@ -40,7 +40,7 @@ namespace ECS.TheSyedMateen.Popcorn
 
                     entityManager.SetComponentData<MovementComponent>(entity, movementComponent);
                 }
-            }
+            }*/
         }
     }
 }

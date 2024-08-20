@@ -6,7 +6,7 @@ namespace ECS.TheSyedMateen.Popcorn
     {
         public Entity entityPrefab;
         public float3 spawnPosition;
-        public float nextSpawnTime;
-        public float spawnRate;
+        //public float nextSpawnTime;
+        //public float spawnRate;
     }
 }

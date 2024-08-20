@@ -8,4 +8,9 @@ namespace ECS.TheSyedMateen.Popcorn
         public float3 moveDirection;
         public float moveSpeed;
     }
+
+    public struct PlayerMouseInput : IComponentData
+    {
+        public float2 mousePosition;
+    }
 }

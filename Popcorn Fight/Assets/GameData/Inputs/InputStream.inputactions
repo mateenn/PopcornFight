@@ -1,0 +1,54 @@
+{
+    "name": "InputStream",
+    "maps": [
+        {
+            "name": "MouseInput",
+            "id": "22be1c78-5e5e-4e93-9421-3f92bfa66284",
+            "actions": [
+                {
+                    "name": "MouseClink",
+                    "type": "Value",
+                    "id": "db325fb6-51c6-4967-8f35-5913b7973002",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MousePressed",
+                    "type": "Button",
+                    "id": "0cbaf311-0949-4d5a-8378-28e8d5e731b4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7724311c-9726-4903-85d5-acadf1de0121",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseClink",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c18139a3-ed3b-4c1f-a007-bec35a745129",
+                    "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
